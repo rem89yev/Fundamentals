@@ -8,12 +8,12 @@ public class ClassesAndObjects {
         Person person1 = new Person();
         person1.name = "Роман";
         person1.age = 50;
-        System.out.println("Меня зовут " + person1.name + ", " + "мне " + person1.age + " лет");
+        person1.speak();
 
         Person person2 = new Person();
         person2.name = "Семен";
         person2.age = 18;
-        System.out.println("Меня зовут " + person2.name + ", " + "мне " + person2.age + " лет");
+        person2.sayHello();
     }
 }
 
@@ -24,5 +24,19 @@ class Person {
 
     String name;
     int age;
+    void speak() {
+        for(int i = 0; i<3; i++) {
+
+
+            System.out.println("Меня зовут " + name + ", мне " + age + " лет");}
+
+        }
+
+        void sayHello() {
+
+            System.out.println("Привет");
+
+    }
 
 }
+
