@@ -6,13 +6,20 @@ public class ClassesAndObjects {
     public static void main(String[] args) {
 
         Person person1 = new Person();
-        person1.name = "Роман";
-        person1.age = 50;
+        // person1.name = "Роман";
+        person1.setNameAndAge("Roman",20 );
+        //person1.age = 50;
         //person1.speak();
+        String s1 = "Vova";
+
 
         Person person2 = new Person();
         person2.name = "Семен";
         person2.age = 18;
+        person1.speak();
+        person2.speak();
+        person2.setNameAndAge(s1, 30);
+
         //person2.sayHello();
         //person1.calculateYearsToRetirement();
         //person2.calculateYearsToRetirement();
@@ -35,7 +42,10 @@ class Person {
     //    int years = 65-age;
     //System.out.println("Количество лет до пенсии: " + years);}
 
-
+    void setNameAndAge(String username, int userage) {
+        name = username;
+        age = userage;
+    }
 
     int calculateYearsToRetirement() {
         int years = 65 - age;
